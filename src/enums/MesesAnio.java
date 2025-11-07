@@ -1,4 +1,4 @@
-package ejercicios;
+package enums;
 
 public enum MesesAnio {
     Enero("invierno", 1),

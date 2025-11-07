@@ -2,7 +2,6 @@ package opt;
 
 public class EjerciciosClaseExtra {
 
-
     /*
     public void ejercicio1(Scanner scn){
         scn = new Scanner(System.in);
