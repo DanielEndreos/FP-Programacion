@@ -1,8 +1,4 @@
-import ejercicios.EjerciciosSwitchFor;
-import ejercicios.EjerciciosT1;
-import ejercicios.EjerciciosT2;
-import ejercicios.EjerciciosT3;
-import ejercicios.EjerciciosWhileDoWhile;
+import ejercicios.*;
 
 import java.util.Scanner;
 
@@ -16,7 +12,9 @@ public class Main {
 //      EjerciciosT3 eT3 = new EjerciciosT3(); // Llamada a Ejercicios T3
 //      EjerciciosSwitchFor eSF = new EjerciciosSwitchFor(); // Llamada a Ejercicios SwitchFor
 //      EjerciciosWhileDoWhile eWdW = new EjerciciosWhileDoWhile(); //Llamada a Ejercicios WhileDoWhile
+        EjerciciosOpe eOpe = new EjerciciosOpe();
 
+        eOpe.ejercicioOpe2(scn);
         // Ejercicios T1
         /*
 //      eT1.ejercicio1T1();
