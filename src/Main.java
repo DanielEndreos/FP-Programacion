@@ -1,4 +1,5 @@
 import ejercicios.*;
+import enums.TipoFile;
 
 import java.util.Scanner;
 
@@ -12,9 +13,10 @@ public class Main {
 //      EjerciciosT3 eT3 = new EjerciciosT3(); // Llamada a Ejercicios T3
 //      EjerciciosSwitchFor eSF = new EjerciciosSwitchFor(); // Llamada a Ejercicios SwitchFor
 //      EjerciciosWhileDoWhile eWdW = new EjerciciosWhileDoWhile(); //Llamada a Ejercicios WhileDoWhile
+        MPO mpo = new MPO();
         EjerciciosOpe eOpe = new EjerciciosOpe();
 
-        eOpe.ejercicioOpe2(scn);
+        //eOpe.ejercicioOpe2(scn);
         // Ejercicios T1
         /*
 //      eT1.ejercicio1T1();
@@ -86,7 +88,19 @@ public class Main {
 //        eWdW.ejercicio9WdW(scn);
 //        eWdW.ejercicio10WdW(scn);
         */
-        
+
+
+
+
+
+        mpo.ejercicio10(scn);
+
+
+
+
+
+
+
         scn.close(); // Cierre Scanner
     }
 
