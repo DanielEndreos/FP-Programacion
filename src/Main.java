@@ -16,7 +16,16 @@ public class Main {
         MPO mpo = new MPO();
         EjerciciosOpe eOpe = new EjerciciosOpe();
 
+<<<<<<< Updated upstream
         //eOpe.ejercicioOpe2(scn);
+=======
+
+        //eOpe.ejercicioOpe2(scn);
+        // eOpe.ejercicioOpe3(scn);
+        //eOpe.ejercicioOpe4(scn);
+        //eOpe.ejercicioOpe5(scn);
+
+>>>>>>> Stashed changes
         // Ejercicios T1
         /*
 //      eT1.ejercicio1T1();

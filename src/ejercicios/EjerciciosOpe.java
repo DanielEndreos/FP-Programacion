@@ -1,5 +1,6 @@
 package ejercicios;
 
+import enums.CateogriaPlato;
 import enums.Moneda;
 
 import java.util.Scanner;
@@ -39,5 +40,80 @@ public class EjerciciosOpe {
         }
     }
 
+    public void ejercicioOpe3(Scanner scn){
+        //Crear un programa que clasifique la temperatura en categorías usando rangos.
+        //Requisitos:
+        // 1. Declara una variable int temperatura en grados Celsius.
+        // 2. Usa Switch(true) para clasificar la temperatura en: Helado(<0), Frío(0-15), Templado(16-25), Calor(26-35), Muy Caliente(>35).
+        // 3. Muestra un mensaje descriptivo y una recomendación de vestimenta
+
+
+
+
+    } //TODO
+
+    public void ejercicioOpe4(Scanner scn){
+        //Simular un sistema de pedidos de restaurante con diferentes categorías.
+        //Requisitos:
+        // 1. Crea un enum CateogriaPlato con: ENTRADA, PRINCIPAL, POSTRE, BEBIDA.
+        // 2. Declara una variable del tipo enum.
+        // 3. Usa un switch para mostrar 3 opciones disponibles de cada categoría.
+        // 4. Agrupa categorías similares si es apropiado.
+
+        System.out.print("¿Que quieres saber del menú (Entrada / Principal / Bebida / Postre? ");
+        String categoria = scn.next().toUpperCase();
+
+    switch(CateogriaPlato.valueOf(categoria)){
+        case ENTRADA -> {
+            System.out.println("Croquetas de Jamón");
+            System.out.println("Croquetas de Salmón");
+            System.out.println("Croquetas de Bacalao");
+        }
+        case PRINCIPAL -> {
+            System.out.println("Paella");
+            System.out.println("Canelones");
+            System.out.println("Arroz al Horno");
+        }
+        case BEBIDA -> {
+            System.out.println("Coca-Cola");
+            System.out.println("Pepsi");
+            System.out.println("Agua");
+        }
+        case POSTRE -> {
+            System.out.println("Crema Catalana");
+            System.out.println("Helado de Coco");
+            System.out.println("Brownie de Chocolate");
+        }
+
+    }
+
+
+    }
+
+    public void ejercicioOpe5(Scanner scn) {
+        //Crear una calculadora simple que realice operaciones según un operador.
+        //Requisitos:
+        // 1. Declara dos variables double num1 y double num2.
+        // 2. Declara una variable char operador con valores posibles: '+','-','*','/'
+        // 3. Usa un switch para realizar la operación correspondiente.
+        // 4. Maneja el caso especial de división por cero.
+
+        double num1 = 10;
+        double num2 = 5.5;
+        char operador = '*';
+
+        switch (operador) {
+            case '+' -> {System.out.printf("El valor de la suma de %.1f + %.1f, es %.1f", num1, num2, num1 + num2);}
+            case '-' -> {System.out.printf("El valor de la suma de %.1f - %.1f, es %.1f", num1, num2, num1 - num2);}
+            case '*' -> {System.out.printf("El valor de la suma de %.1f * %.1f, es %.1f", num1, num2, num1 * num2);}
+            case '/' -> {
+                if (num2 != 0) {
+                    System.out.printf("El valor de la suma de %.1f / %.1f, es %.1f", num1, num2, num1 / num2);
+                } else {
+                    System.out.println("Un número no puede divirse entre 0.");
+                }
+            }
+        }
+    }
 
 }
