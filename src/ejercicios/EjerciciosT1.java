@@ -195,7 +195,7 @@ public class EjerciciosT1 {
         //F = C × 9/5 + 32                                                  //
 
         double tempCelsius = 25.2;
-        double tempFahren = (tempCelsius * (9.0/5.0))+ 32.0;
+        double tempFahren = tempCelsius * 9.0/5.0+ 32.0;
         System.out.printf("""
                 \n
                 Temperatura en Celsius: %.2f
