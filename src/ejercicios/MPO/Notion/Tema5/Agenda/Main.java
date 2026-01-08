@@ -1,4 +1,4 @@
-package ejercicios.MPO.Notion.Tema4._1_Agenda;
+package ejercicios.MPO.Notion.Tema5.Agenda;
 
 import java.util.ArrayList;
 import java.util.Scanner;
