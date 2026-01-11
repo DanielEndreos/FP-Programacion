@@ -15,7 +15,6 @@ public class Carrito {
         }else{
             System.out.printf("No existen unidades suficientes del producto '%s'...✗\n",producto.getNombre());
         }
-
     }
 
     public static void rmvFromCarrito(Producto producto){
