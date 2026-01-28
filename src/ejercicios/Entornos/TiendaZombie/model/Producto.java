@@ -1,4 +1,4 @@
-package ejercicios.Entornos.problema.model;
+package ejercicios.Entornos.TiendaZombie.model;
 
 public class Producto {
     private String nombre;
@@ -13,10 +13,13 @@ public class Producto {
         this.stock = stock;
     }
 
+    public String mostrarInfo(){
+        return (nombre + " - " + precio + "€ - Stock: " + stock);
+    }
+
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -24,7 +27,6 @@ public class Producto {
     public Double getPrecio() {
         return precio;
     }
-
     public void setPrecio(Double precio) {
         this.precio = precio;
     }
@@ -32,7 +34,6 @@ public class Producto {
     public int getStock() {
         return stock;
     }
-
     public void setStock(int stock) {
         this.stock = stock;
     }
