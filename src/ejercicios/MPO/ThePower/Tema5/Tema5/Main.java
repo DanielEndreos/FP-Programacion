@@ -1,4 +1,4 @@
-package ejercicios.MPO.Clase.Tema5;
+package ejercicios.MPO.ThePower.Tema5.Tema5;
 
 import java.util.ArrayList;
 import java.util.function.Predicate;
