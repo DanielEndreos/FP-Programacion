@@ -1,41 +1,46 @@
 package ejercicios.Programacion.ThePower.Tema6.EjercicioRutas;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.io.File;
-import java.io.IOException;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int profundidad = -1;
         String rutaBase= "src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/";
 
-        System.out.println("""
-                
-                Estructura tipo 1:
-                -----------------------------""");
-        profundidad = tree(rutaBase, profundidad);
+//        System.out.println("""
+//
+//                Estructura tipo 1:
+//                -----------------------------""");
+//        profundidad = tree(rutaBase, profundidad);
+//
+//        System.out.println("""
+//
+//                Estructura tipo 2:
+//                -----------------------------""");
+//        profundidad = -1;
+//        profundidad = tree2(rutaBase, profundidad);
+//
+//        System.out.println("""
+//
+//                Estructura tipo 3:
+//                -----------------------------""");
+//        profundidad = -1;
+//        profundidad = tree3(rutaBase, profundidad);
 
-        System.out.println("""
-                
-                Estructura tipo 2:
-                -----------------------------""");
-        profundidad = -1;
-        profundidad = tree2(rutaBase, profundidad);
 
-        System.out.println("""
-                
-                Estructura tipo 3:
-                -----------------------------""");
-        profundidad = -1;
-        profundidad = tree3(rutaBase, profundidad);
+        Operaciones operaciones = new Operaciones();
 
+       // operaciones.leerContenidoFichero("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/file.txt");
+        // operaciones.leerContenidoFicheroLineas("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/file2.txt");
+        //operaciones.descifrarContenido("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/file.txt");
+        operaciones.escrituraFichero("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/escritura.txt");
     }
 
     public static int tree(String rutaBase, int profundidad){
 
         profundidad +=1;
         File ruta = new File(rutaBase);
+
 
         for (File file : ruta.listFiles(File::isFile)) {
             for (int i = 0; i < profundidad; i++) {
