@@ -34,81 +34,83 @@ public class Main {
         // operaciones.leerContenidoFicheroLineas("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/file2.txt");
         //operaciones.descifrarContenido("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/file.txt");
         operaciones.escrituraFichero("src/ejercicios/Programacion/ThePower/Tema6/EjercicioRutas/rutasejemplo/escritura.txt");
+    
+
     }
-
-    public static int tree(String rutaBase, int profundidad){
-
-        profundidad +=1;
-        File ruta = new File(rutaBase);
-
-
-        for (File file : ruta.listFiles(File::isFile)) {
-            for (int i = 0; i < profundidad; i++) {
-                    System.out.print("\t");
-            }
-
-                System.out.println(file.getName());
-        }
-
-        for (File file : ruta.listFiles(File::isDirectory)) {
-            for (int i = 0; i < profundidad; i++) {
-                  System.out.print("\t");
-            }
-            System.out.println(file.getName());
-            profundidad = tree(file.getPath(), profundidad);
-            profundidad -=1;
-        }
-        return profundidad;
-    }
-
-    public static int tree2(String rutaBase, int profundidad){
-
-        profundidad +=1;
-        File ruta = new File(rutaBase);
-
-        for (File file : ruta.listFiles(File::isFile)) {
-            for (int i = 0; i < profundidad; i++) {
-                System.out.print("\t");
-            }
-
-            System.out.println("..\\"+file.getName());
-        }
-
-        for (File file : ruta.listFiles(File::isDirectory)) {
-            for (int i = 0; i < profundidad; i++) {
-                System.out.print("\t");
-            }
-            System.out.println("..\\"+file.getName());
-            profundidad = tree2(file.getPath(), profundidad);
-            profundidad -=1;
-        }
-        return profundidad;
-    }
-
-    public static int tree3(String rutaBase, int profundidad){
-
-        profundidad +=1;
-        File ruta = new File(rutaBase);
-
-        for (File file : ruta.listFiles(File::isFile)) {
-            String[] a = file.getPath().split("\\\\");
-            for (int i = profundidad; i >= 0; i--) {
-                System.out.print(a[a.length-2-i]+'\\');
-            }
-
-            System.out.println(file.getName());
-        }
-
-        for (File file : ruta.listFiles(File::isDirectory)) {
-            String[] a = file.getPath().split("\\\\");
-            for (int i = profundidad; i >= 0; i--) {
-                System.out.print(a[a.length-2-i]+'\\');
-            }
-
-            System.out.println(file.getName());
-            profundidad = tree3(file.getPath(), profundidad);
-            profundidad -=1;
-        }
-        return profundidad;
-    }
+//
+//    public static int tree(String rutaBase, int profundidad){
+//
+//        profundidad +=1;
+//        File ruta = new File(rutaBase);
+//
+//
+//        for (File file : ruta.listFiles(File::isFile)) {
+//            for (int i = 0; i < profundidad; i++) {
+//                    System.out.print("\t");
+//            }
+//
+//                System.out.println(file.getName());
+//        }
+//
+//        for (File file : ruta.listFiles(File::isDirectory)) {
+//            for (int i = 0; i < profundidad; i++) {
+//                  System.out.print("\t");
+//            }
+//            System.out.println(file.getName());
+//            profundidad = tree(file.getPath(), profundidad);
+//            profundidad -=1;
+//        }
+//        return profundidad;
+//    }
+//
+//    public static int tree2(String rutaBase, int profundidad){
+//
+//        profundidad +=1;
+//        File ruta = new File(rutaBase);
+//
+//        for (File file : ruta.listFiles(File::isFile)) {
+//            for (int i = 0; i < profundidad; i++) {
+//                System.out.print("\t");
+//            }
+//
+//            System.out.println("..\\"+file.getName());
+//        }
+//
+//        for (File file : ruta.listFiles(File::isDirectory)) {
+//            for (int i = 0; i < profundidad; i++) {
+//                System.out.print("\t");
+//            }
+//            System.out.println("..\\"+file.getName());
+//            profundidad = tree2(file.getPath(), profundidad);
+//            profundidad -=1;
+//        }
+//        return profundidad;
+//    }
+//
+//    public static int tree3(String rutaBase, int profundidad){
+//
+//        profundidad +=1;
+//        File ruta = new File(rutaBase);
+//
+//        for (File file : ruta.listFiles(File::isFile)) {
+//            String[] a = file.getPath().split("\\\\");
+//            for (int i = profundidad; i >= 0; i--) {
+//                System.out.print(a[a.length-2-i]+'\\');
+//            }
+//
+//            System.out.println(file.getName());
+//        }
+//
+//        for (File file : ruta.listFiles(File::isDirectory)) {
+//            String[] a = file.getPath().split("\\\\");
+//            for (int i = profundidad; i >= 0; i--) {
+//                System.out.print(a[a.length-2-i]+'\\');
+//            }
+//
+//            System.out.println(file.getName());
+//            profundidad = tree3(file.getPath(), profundidad);
+//            profundidad -=1;
+//        }
+//        return profundidad;
+//    }
 }
