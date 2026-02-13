@@ -1,11 +1,10 @@
-package ejercicios.MPO.ThePower.Tema4;
+package ejercicios.MPO.ThePower.Tema4.Ejercicio1_TiendaOnline;
 
 import ejercicios.MPO.ThePower.Tema4.Ejercicio1_TiendaOnline.controller.GestorProductos;
 import ejercicios.MPO.ThePower.Tema4.Ejercicio1_TiendaOnline.model.Producto;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.BiPredicate;
 
 public class Main {
     /*
