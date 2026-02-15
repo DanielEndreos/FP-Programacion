@@ -1,0 +1,3 @@
+Esta aplicación java sirve para contar cuantas palabras iguales contiene el archivo.
+
+Por ejemplo, Java java java java JAva java JavA.
