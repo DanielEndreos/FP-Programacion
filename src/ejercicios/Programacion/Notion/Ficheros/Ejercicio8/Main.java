@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
     public static void main(String[] args) {
@@ -71,11 +72,13 @@ public class Main {
                 textoOrdenado.add(new Cuenteo(palabra, cantidad));
 
             });
-
+            AtomicInteger a2 = new AtomicInteger();
             textoOrdenado.stream()
                          .sorted(Comparator.comparingLong(Cuenteo::getCantidad).reversed())
                          .limit(5)
-                         .forEach(a-> System.out.println(a.getNombre()+": "+a.getCantidad()));
+                         .forEach(a-> {
+
+                             System.out.println(a2.addAndGet(1) +". " + a.getNombre()+": "+a.getCantidad());});
 
         } catch (FileNotFoundException e) {
             System.out.println("El archivo no ha podido ser encontrado o la ruta no existe.");
