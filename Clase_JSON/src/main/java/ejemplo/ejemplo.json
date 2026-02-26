@@ -1,0 +1,26 @@
+[
+  {
+  "nombre": "Borja",
+  "apellido": "Martin",
+  "Edad": 42,
+  "asignaturas": [
+    {"nombre":  "programación", "curso":  "dam", "nivel":  1},
+    {"nombre":  "programación", "curso":  "daw", "nivel":  1},
+    {"nombre":  "acceso a datos", "curso":  "dam", "nivel":  2},
+    {"nombre":  "desarrolo cliente", "curso":  "daw", "nivel":  2}
+    ]
+},
+  {
+  "nombre": "Borja",
+  "apellido": "Martin",
+  "Edad": 42,
+  "asignaturas": [
+    {"nombre":  "programación", "curso":  "dam", "nivel":  1},
+    {"nombre":  "programación", "curso":  "daw", "nivel":  1},
+    {"nombre":  "acceso a datos", "curso":  "dam", "nivel":  2},
+    {"nombre":  "desarrolo cliente", "curso":  "daw", "nivel":  2}
+  ]
+}
+]
+
+objeto.asignaturas[3].nombre
